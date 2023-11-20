@@ -16,8 +16,8 @@ class TimeError:
     def _get_server_time(self):
         response = self.requester.get("https://worldtimeapi.org/api/ip")
         json = response.json()
-        print(f'my_time: {self.time}')
-        print(f'JSON Response: {json}')
+        # print(f'my_time: {self.time}')
+        # print(f'JSON Response: {json}')
         return json["unixtime"]
 
 
